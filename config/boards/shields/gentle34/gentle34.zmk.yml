@@ -1,0 +1,11 @@
+file_format: "1"
+id: gentle34
+name: gentle34
+type: shield
+url: https://github.com/talbotsolenberger/zmk-config-gentle34
+requires: [pro_micro]
+features:
+  - keys
+  siblings:
+  - gentle34_left
+  - gentle34_right
