@@ -2,6 +2,8 @@
 # SPDX-License-Identifier: MIT
 
 if SHIELD_GENTLE34_LEFT
+
+config ZMK_KEYBOARD_NAME
     default "gentle34"
 
 config ZMK_SPLIT_ROLE_CENTRAL
