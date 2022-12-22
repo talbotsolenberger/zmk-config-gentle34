@@ -223,7 +223,7 @@
                 navigation_layer2 {
                 bindings = <
         &kp ESC         &kp F7          &kp F8          &kp F9          &kp F12                 &kp C_VOL_UP    &kp HOME        &kp UP          &kp END         &kp DEL         
-        &kp TAB         &kp F4          &kp F5          &kp F6          &kp F11                 &kp C_VOL_DN    &kp LEFT        &kp DOWN        &kp RIGHT       &kp ENTER       
+        &kp TAB         &kp F4          &kp F5          &kp F6          &kp F11                 &kp C_VOL_DN    &kp LEFT        &kp DOWN        &kp RIGHT       &kp LGUI     
         &kp INS         &kp F1          &kp F2          &kp F3          &kp F10                 &kp PSCRN       &kp PG_UP       &kp PG_DN       &trans          &kp C_PP        
                                                         &kp ENTER       &kp LCTRL               &kp RALT        &kp RSHFT       
                         >;
