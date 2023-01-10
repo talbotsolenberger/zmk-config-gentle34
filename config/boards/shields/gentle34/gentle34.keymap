@@ -167,19 +167,19 @@
                 };
                 combo_gaming {
                         timeout-ms = <30>;
-                        key-positions = <28 29 30>;
+                        key-positions = <27 28 29>;
                         bindings = <&to 4>;
                         layers = <AL>;
                 };
                 combo_OSsym_left {
 			            timeout-ms = <30>;
-			            key-positions = <13 14>;
+			            key-positions = <12 13>;
 			            bindings = <&OSsym>;
 		        layers = <AL>;
 		        };
                 combo_OSsym_right {
 			            timeout-ms = <30>;
-			            key-positions = <17 18>;
+			            key-positions = <16 17>;
 			            bindings = <&OSsym>;
 		                layers = <AL>;
 		        };
@@ -191,7 +191,7 @@
                 };
                 combo_AL {
                         timeout-ms = <30>;
-                        key-positions = <27 28 29>;
+                        key-positions = <26 27 28>;
                         bindings = <&to AL>; 
                 };
         };
