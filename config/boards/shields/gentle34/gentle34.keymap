@@ -155,6 +155,18 @@
                                 , <&macro_tap &kp ENTER>
                                 ;
                 };
+                ios_dis: ios_discord {
+                        compatible = "zmk,behavior-macro";
+                        label = "MACRO11";
+                        #binding_cells = <0>;
+                        bindings
+                                = <&macro_press &kp LCTRL>
+                                , <&macro_tap &kp SPACE>
+                                , <&macro_release &kp LCTRL>
+                                , <&macro_tap &kp D &kp I &kp S>
+                                , <&macro_tap &kp ENTER>
+                                ;      
+                };
         };
 
         combos {
@@ -250,7 +262,7 @@
                 ios_layer5 {
                 bindings = <
         &trans          &ios_wc         &ios_set        &trans          &trans                  &ios_you        &trans          &trans          &trans          &trans          
-        &ios_app        &ios_saf        &trans          &ios_file       &trans                  &ios_ghub       &trans          &trans          &trans          &trans          
+        &ios_app        &ios_saf        &ios_dis        &ios_file       &trans                  &ios_ghub       &trans          &trans          &trans          &trans          
         &trans          &trans          &ios_code       &trans          &trans                  &ios_note       &trans          &trans          &trans          &trans          
                                                         &trans          &trans                  &trans          &trans          
                         >;
