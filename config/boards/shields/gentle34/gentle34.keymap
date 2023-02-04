@@ -158,7 +158,7 @@
                 ios_dis: ios_discord {
                         compatible = "zmk,behavior-macro";
                         label = "MACRO11";
-                        #binding_cells = <0>;
+                        #binding-cells = <0>;
                         bindings
                                 = <&macro_press &kp LCTRL>
                                 , <&macro_tap &kp SPACE>
