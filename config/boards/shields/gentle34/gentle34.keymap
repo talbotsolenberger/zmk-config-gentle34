@@ -216,9 +216,9 @@
 
                 alphas_layer0 {
                 bindings = <
-        &kp Q           &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P           
-        &kp A           &hrl SYM S      &hrl NAV D      &hrl NUM F      &kp G                   &kp H           &hrl NUM J      &hrl NAV K      &hrl SYM L      &kp APOS        
-        &kp Z           &kp X           &kp C           &kp V           &kp B                   &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        
+        &kp Y           &kp C           &kp L           &kp M           &kp K                   &kp Z           &kp F           &kp U           &kp COMMA       &kp APOS           
+        &kp I           &hrl SYM S      &hrl NAV R      &hrl NUM T      &kp G                   &kp P           &hrl NUM N      &hrl NAV E      &hrl SYM A      &kp O        
+        &kp Q           &kp V           &kp W           &kp D           &kp J                   &kp B           &kp H           &kp FSLH        &kp DOT         &kp X        
                                                 &mt LC(LS(LALT)) SPACE  &kp LCTRL               &kp BSPC        &sk RSHFT       
                         >;
                 };
