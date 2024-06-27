@@ -25,6 +25,7 @@
 #define NUM 3
 #define GAME 4
 #define IOS 5
+#define UNR 6
 
 / {
 
@@ -218,7 +219,7 @@
                 bindings = <
         &kp Y           &kp C           &kp L           &kp M           &kp K                   &kp Z           &kp F           &kp U           &kp COMMA       &kp APOS      
         &mt LGUI I      &hrl SYM S      &hrl NAV R      &hrl NUM T      &kp G                   &kp P           &hrl NUM N      &hrl NAV E      &hrl SYM A      &mt LGUI O        
-        &kp Q           &kp V           &kp W           &kp D           &kp J                   &kp B           &kp H           &kp FSLH        &kp DOT         &kp X        
+        &hrl UNR Q      &kp V           &kp W           &kp D           &kp J                   &kp B           &kp H           &kp FSLH        &kp DOT         &kp X        
                                                 &mt LC(LS(LALT)) SPACE  &kp LCTRL               &kp BSPC        &sk RSHFT       
                         >;
                 };
@@ -265,6 +266,15 @@
         &ios_app        &ios_saf        &ios_dis        &ios_file       &trans                  &ios_ghub       &trans          &trans          &trans          &trans          
         &trans          &trans          &ios_code       &trans          &trans                  &ios_note       &trans          &trans          &trans          &trans          
                                                         &trans          &trans                  &trans          &trans          
+                        >;
+                };
+
+                unreal_layer5 {
+                bindings = <
+        &kp TAB         &kp Q           &kp W           &kp E           &kp R                   &kp C_VOL_UP    &trans          &kp UP          &trans          &kp F19         
+        &kp LSHFT       &kp A           &kp S           &kp D           &kp F                   &kp C_VOL_DN    &kp LEFT        &kp DOWN        &kp RIGHT       &kp F18         
+        &kp LCTRL       &kp Z           &kp X           &kp C           &kp V                   &kp M           &kp C           &kp V           &trans          &kp C_PP        
+                                                        &kp SPACE       &kp LALT                &kp ESC         &kp ENTER       
                         >;
                 };
 
