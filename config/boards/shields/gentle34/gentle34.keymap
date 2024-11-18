@@ -207,10 +207,10 @@
                         key-positions = <26 27 28>;
                         bindings = <&to AL>; 
                 };
-                combo_BT_reset {
+                combo_BT_profile_clear {
                         timeout-ms = <30>;
                         key-positions = <9 29>;
-                        bindings = <&kp T>;
+                        bindings = <&bt BT_CLR>;
                         layers = <NAV>;
                 };
         };
