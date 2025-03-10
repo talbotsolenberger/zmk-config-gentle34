@@ -26,6 +26,7 @@
 #define GAME 4
 #define IOS 5
 #define UNR 6
+#define GAME2 7
 
 / {
 
@@ -259,7 +260,7 @@
                 
                 gaming_layer4 {
                 bindings = <
-        &kp TAB         &kp Q           &kp W           &kp E           &kp R                   &kp C_VOL_UP    &kp X           &kp UP          &trans          &kp F19         
+        &mo GAME2       &kp Q           &kp W           &kp E           &kp R                   &kp C_VOL_UP    &kp X           &kp UP          &trans          &kp F19         
         &kp LSHFT       &kp A           &kp S           &kp D           &kp F                   &kp C_VOL_DN    &kp LEFT        &kp DOWN        &kp RIGHT       &kp F18         
         &kp LCTRL       &kp Z           &kp X           &kp C           &kp V                   &kp M           &kp C           &kp V           &kp Z           &kp C_PP        
                                                         &kp SPACE       &kp LALT                &kp ESC         &kp ENTER       
@@ -281,6 +282,15 @@
         &kp LSHFT       &kp A           &kp S           &kp D           &kp F                   &kp C_VOL_DN    &kp LEFT        &kp DOWN        &kp RIGHT       &kp F18         
         &kp LCTRL       &kp Z           &kp X           &kp C           &kp V                   &kp M           &kp C           &kp V           &trans          &kp C_PP        
                                                         &kp SPACE       &kp LALT                &kp ESC         &kp ENTER       
+                        >;
+                };
+
+                gaming_second_layer7 {
+                bindings = <
+        &trans          &kp ESC         &trans          &trans          &kp N1                  &kp C_VOL_UP    &kp X           &kp UP          &trans          &kp F19         
+        &trans          &trans          &trans          &trans          &kp N2                  &kp C_VOL_DN    &kp LEFT        &kp DOWN        &kp RIGHT       &kp F18         
+        &kp TAB         &trans          &trans          &trans          &kp N3                  &kp M           &kp C           &kp V           &kp Z           &kp C_PP        
+                                                        &kp N4          &kp N5                  &kp ESC         &kp ENTER       
                         >;
                 };
 
