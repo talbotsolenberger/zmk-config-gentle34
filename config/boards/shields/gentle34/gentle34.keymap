@@ -217,7 +217,7 @@
                 combo_alt_tab {
                         timeout-ms = <30>;
                         key-positions = <22 23>; // keys wd
-                        bindings = <&kp LALT(TAB)>;
+                        bindings = <&kp LA(TAB)>;
                         layers = <AL>;
                 };
         };
