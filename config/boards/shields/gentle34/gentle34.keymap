@@ -175,45 +175,51 @@
                 compatible = "zmk,combos";
                 combo_caps {
                         timeout-ms = <30>;
-                        key-positions = <16 17 18>;
+                        key-positions = <16 17 18>; // keys nea
                         bindings = <&caps_word>;
                         layers = <AL>;
                 };
                 combo_gaming {
                         timeout-ms = <30>;
-                        key-positions = <27 28 29>;
+                        key-positions = <27 28 29>; // keys /.x
                         bindings = <&to 4>;
                         layers = <AL>;
                 };
                 combo_OSsym_left {
-			            timeout-ms = <30>;
-			            key-positions = <12 13>;
-			            bindings = <&OSsym>;
+			timeout-ms = <30>;
+			key-positions = <12 13>; // keys rt
+			bindings = <&OSsym>;
 		        layers = <AL>;
 		        };
                 combo_OSsym_right {
-			            timeout-ms = <30>;
-			            key-positions = <16 17>;
-			            bindings = <&OSsym>;
-		                layers = <AL>;
+			timeout-ms = <30>;
+			key-positions = <16 17>; // keys ne
+			bindings = <&OSsym>;
+		        layers = <AL>;
 		        };
                 combo_ios {
                         timeout-ms = <30>;
-                        key-positions = <1 2 3>;
+                        key-positions = <1 2 3>; // keys ycl
                         bindings = <&sl IOS>;
                         layers = <AL>;
                 };
                 combo_AL {
                         timeout-ms = <30>;
-                        key-positions = <26 27 28>;
+                        key-positions = <26 27 28>; // keys h/.
                         bindings = <&to AL>; 
                 };
                 combo_BT_profile_clear {
                         timeout-ms = <30>;
-                        key-positions = <9 29>;
+                        key-positions = <9 29>; // keys 'x
                         bindings = <&bt BT_CLR>;
                         layers = <NAV>;
                 };
+                combo_alt_tab {
+                        timeout-ms = <30>;
+                        key-positions = <22 23>; // keys wd
+                        bindings = <&kp LALT(TAB)>
+                        layers = <AL>
+                }
         };
 
 };
