@@ -24,9 +24,8 @@
 #define NAV 2
 #define NUM 3
 #define GAME 4
-#define IOS 5
-#define UNR 6
-#define GAME2 7
+#define UNR 5
+#define GAME2 6
 
 / {
 
@@ -48,126 +47,6 @@
                         label = "MACRO1";
                         #binding-cells = <0>;
                         bindings = <&sl SYM>;
-                };
-                ios_saf: ios_safari {
-                        compatible = "zmk,behavior-macro";
-                        label = "MACRO2";
-                        #binding-cells = <0>;
-                        bindings
-                                = <&macro_press &kp LCTRL>
-                                , <&macro_tap &kp SPACE>
-                                , <&macro_release &kp LCTRL>
-                                , <&macro_tap &kp S &kp A &kp F>
-                                , <&macro_tap &kp ENTER>
-                                ;
-                };
-                ios_set: ios_settings {
-                        compatible = "zmk,behavior-macro";
-                        label = "MACRO3";
-                        #binding-cells = <0>;
-                        bindings
-                                = <&macro_press &kp LCTRL>
-                                , <&macro_tap &kp SPACE>
-                                , <&macro_release &kp LCTRL>
-                                , <&macro_tap &kp S &kp E &kp T>
-                                , <&macro_tap &kp ENTER>
-                                ;
-                };
-                ios_you: ios_youtube {
-                        compatible = "zmk,behavior-macro";
-                        label = "MACRO4";
-                        #binding-cells = <0>;
-                        bindings
-                                = <&macro_press &kp LCTRL>
-                                , <&macro_tap &kp SPACE>
-                                , <&macro_release &kp LCTRL>
-                                , <&macro_tap &kp Y &kp O &kp U>
-                                , <&macro_tap &kp ENTER>
-                                ;
-                };
-                ios_file: ios_files {
-                        compatible = "zmk,behavior-macro";
-                        label = "MACRO5";
-                        #binding-cells = <0>;
-                        bindings
-                                = <&macro_press &kp LCTRL>
-                                , <&macro_tap &kp SPACE>
-                                , <&macro_release &kp LCTRL>
-                                , <&macro_tap &kp F &kp I &kp L>
-                                , <&macro_tap &kp ENTER>
-                                ;
-                };
-                ios_note: ios_notes {
-                        compatible = "zmk,behavior-macro";
-                        label = "MACRO6";
-                        #binding-cells = <0>;
-                        bindings
-                                = <&macro_press &kp LCTRL>
-                                , <&macro_tap &kp SPACE>
-                                , <&macro_release &kp LCTRL>
-                                , <&macro_tap &kp N &kp O &kp T>
-                                , <&macro_tap &kp ENTER>
-                                ;
-                };
-                ios_ghub: ios_github {
-                        compatible = "zmk,behavior-macro";
-                        label = "MACRO7";
-                        #binding-cells = <0>;
-                        bindings
-                                = <&macro_press &kp LCTRL>
-                                , <&macro_tap &kp SPACE>
-                                , <&macro_release &kp LCTRL>
-                                , <&macro_tap &kp G &kp I &kp T &kp H>
-                                , <&macro_tap &kp ENTER>
-                                ;
-                };
-                ios_code: ios_codeapp {
-                        compatible = "zmk,behavior-macro";
-                        label = "MACRO8";
-                        #binding-cells = <0>;
-                        bindings
-                                = <&macro_press &kp LCTRL>
-                                , <&macro_tap &kp SPACE>
-                                , <&macro_release &kp LCTRL>
-                                , <&macro_tap &kp C &kp O &kp D &kp E>
-                                , <&macro_tap &kp ENTER>
-                                ;
-                };
-                ios_wc: ios_workingcopy {
-                        compatible = "zmk,behavior-macro";
-                        label = "MACRO9";
-                        #binding-cells = <0>;
-                        bindings
-                                = <&macro_press &kp LCTRL>
-                                , <&macro_tap &kp SPACE>
-                                , <&macro_release &kp LCTRL>
-                                , <&macro_tap &kp W &kp O &kp R &kp K>
-                                , <&macro_tap &kp ENTER>
-                                ;
-                };
-                ios_app: ios_appstore {
-                        compatible = "zmk,behavior-macro";
-                        label = "MACRO10";
-                        #binding-cells = <0>;
-                        bindings
-                                = <&macro_press &kp LCTRL>
-                                , <&macro_tap &kp SPACE>
-                                , <&macro_release &kp LCTRL>
-                                , <&macro_tap &kp A &kp P &kp P>
-                                , <&macro_tap &kp ENTER>
-                                ;
-                };
-                ios_dis: ios_discord {
-                        compatible = "zmk,behavior-macro";
-                        label = "MACRO11";
-                        #binding-cells = <0>;
-                        bindings
-                                = <&macro_press &kp LCTRL>
-                                , <&macro_tap &kp SPACE>
-                                , <&macro_release &kp LCTRL>
-                                , <&macro_tap &kp D &kp I &kp S>
-                                , <&macro_tap &kp ENTER>
-                                ;      
                 };
                 alt_tab: windows_alt_tab {
                         compatible = "zmk,behavior-macro";
@@ -205,12 +84,6 @@
 			bindings = <&OSsym>;
 		        layers = <AL>;
 		        };
-                combo_ios {
-                        timeout-ms = <30>;
-                        key-positions = <1 2 3>; // keys ycl
-                        bindings = <&sl IOS>;
-                        layers = <AL>;
-                };
                 combo_AL {
                         timeout-ms = <30>;
                         key-positions = <26 27 28>; // keys h/.
@@ -280,16 +153,7 @@
                         >;
                 };
 
-                ios_layer5 {
-                bindings = <
-        &trans          &ios_wc         &ios_set        &trans          &trans                  &ios_you        &trans          &trans          &trans          &trans          
-        &ios_app        &ios_saf        &ios_dis        &ios_file       &trans                  &ios_ghub       &trans          &trans          &trans          &trans          
-        &trans          &trans          &ios_code       &trans          &trans                  &ios_note       &trans          &trans          &trans          &trans          
-                                                        &trans          &trans                  &trans          &trans          
-                        >;
-                };
-
-                unreal_layer6 {
+                unreal_layer5 {
                 bindings = <
         &kp TAB         &kp Q           &kp W           &kp E           &kp R                   &kp C_VOL_UP    &trans          &kp UP          &trans          &kp F19         
         &kp LSHFT       &kp A           &kp S           &kp D           &kp F                   &kp C_VOL_DN    &kp LEFT        &kp DOWN        &kp RIGHT       &kp F18         
@@ -298,7 +162,7 @@
                         >;
                 };
 
-                gaming_second_layer7 {
+                gaming_second_layer6 {
                 bindings = <
         &trans          &kp ESC         &trans          &trans          &kp N1                  &kp C_VOL_UP    &kp X           &kp UP          &trans          &kp F19         
         &trans          &trans          &trans          &trans          &kp N2                  &kp C_VOL_DN    &kp LEFT        &kp DOWN        &kp RIGHT       &kp F18         
