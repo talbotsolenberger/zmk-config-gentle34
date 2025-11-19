@@ -1,0 +1,30 @@
+;mill max socket data sheet
+https://media.digikey.com/pdf/Data%20Sheets/Mill%20Max%20PDFs/310,%20311,%20315%20Series%20(in.).pdf
+
+;pins (fits all these microcontroller sockets)
+https://www.digikey.com/en/products/detail/mill-max-manufacturing-corp./3320-0-00-15-00-00-03-0/4147392?utm_adgroup=Terminals%20-%20PC%20Pin%2C%20Single%20Post%20Connectors&utm_source=google&utm_medium=cpc&utm_campaign=Shopping_Product_Connectors%2C%20Interconnects&utm_term=&utm_content=Terminals%20-%20PC%20Pin%2C%20Single%20Post%20Connectors&gclid=Cj0KCQiA14WdBhD8ARIsANao07jflUb2LgLTj69KVKim7aZZZNvETvTfgCqkUrcVJulqF6JDLHaYhTgaAuYdEALw_wcB
+
+;high profile (mkultra hipro, definitely works with facedown microcontroller, for sure works with face up)
+https://www.digikey.com/en/products/detail/mill-max-manufacturing-corp/310-93-112-41-001000/103727
+
+;low profile (potentially works with face up microcontroller?) 
+https://www.digikey.com/en/products/detail/mill-max-manufacturing-corp/315-43-112-41-001000/4455231
+
+;jst connector for battery
+https://www.digikey.com/en/products/detail/jst-sales-america-inc/S2B-PH-K-S-LF-SN/926626
+
+;reset button
+https://www.digikey.com/en/products/detail/omron-electronics-inc-emc-div/B3U-1000P/1534338
+
+;on/off switch
+https://www.digikey.com/en/products/detail/c-k/PCM12SMTR/1640112
+
+;choc hot swap sockets
+https://typeractive.xyz/products/hotswap-sockets
+
+;nice!nano v2
+https://typeractive.xyz/products/nice-nano
+
+;110mah 3.7v battery
+https://typeractive.xyz/products/lithium-battery-110mah
+
