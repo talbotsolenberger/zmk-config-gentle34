@@ -66,13 +66,13 @@
                 };
                 combo_OSsym_left {
 			timeout-ms = <30>;
-			key-positions = <12 13>; // keys rt
+			key-positions = <11 12>; // keys rt
 			bindings = <&OSsym>;
 		        layers = <AL>;
 		        };
                 combo_OSsym_right {
 			timeout-ms = <30>;
-			key-positions = <16 17>; // keys ne
+			key-positions = <17 18>; // keys ne
 			bindings = <&OSsym>;
 		        layers = <AL>;
 		        };
@@ -87,15 +87,15 @@
                         bindings = <&bt BT_CLR>;
                         layers = <NAV>;
                 };
-                combo_enter_right {
+                combo_enter_left {
                         timeout-ms = <30>;
-                        key-positions = <17 18>; // keys ea
+                        key-positions = <12 13>; // keys sr
                         bindings = <&kp ENTER>;
                         layers = <AL>;
                 };
-                combo_enter_left {
+                combo_enter_right {
                         timeout-ms = <30>;
-                        key-positions = <11 12>; // keys sr
+                        key-positions = <16 17>; // keys ea
                         bindings = <&kp ENTER>;
                         layers = <AL>;
                 };
