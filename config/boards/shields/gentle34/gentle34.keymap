@@ -92,13 +92,13 @@
                         key-positions = <17 18>; // keys ea
                         bindings = <&kp ENTER>;
                         layers = <AL>;
-                }
+                };
                 combo_enter_left {
                         timeout-ms = <30>;
                         key-positions = <12 13>; // keys sr
                         bindings = <&kp ENTER>;
                         layers = <AL>;
-                }
+                };
         };
 };
 
