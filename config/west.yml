@@ -2,15 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: talbotsolenberger
-      url-base: https://github.com/talbotsolenberger
+    # - name: talbotsolenberger
+    #   url-base: https://github.com/talbotsolenberger
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-keyboards-gentle34
-      remote: talbotsolenberger
-      revision: main
+    # - name: zmk-config-gentle34
+    #   remote: talbotsolenberger
+    #   revision: master
   self:
     path: config
