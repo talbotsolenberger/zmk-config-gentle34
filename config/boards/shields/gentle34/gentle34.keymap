@@ -99,6 +99,18 @@
                         bindings = <&kp ENTER>;
                         layers = <AL>;
                 };
+								combo_tab_left {
+												timeout-ms = <30>;
+												key-positions = <11 12>; // keys is
+												bindings = <&kp TAB>;
+												layers = <AL>;
+								};
+								combo_tab_right {
+												timeout-ms = <30>;
+												key-positions = <19 20>; //keys ao
+												bindings = <&kp TAB>;
+												layers = <AL>;
+								};
         };
 };
 
@@ -111,7 +123,7 @@
         &kp Y           &kp C           &kp L           &kp M           &kp K                   &kp Z           &kp F           &kp U           &kp COMMA       &kp APOS      
         &mt LGUI I      &hrl SYM S      &hrl NAV R      &hrl NUM T      &kp G                   &kp P           &hrl NUM N      &hrl NAV E      &hrl SYM A      &mt LGUI O        
         &hrl UNR Q      &kp V           &mt LALT W      &kp D           &kp J                   &kp B           &kp H           &mt LALT FSLH   &kp DOT         &kp X        
-                                                &mt LC(LS(LALT)) SPACE  &kp LCTRL               &kp BSPC        &sk RSHFT       
+                                                &mt LC(LS(LALT)) SPACE  &mt LC ESC              &kp BSPC        &sk RSHFT       
                         >;
                 };
                 
