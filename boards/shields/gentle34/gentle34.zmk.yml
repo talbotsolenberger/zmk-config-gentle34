@@ -2,7 +2,7 @@ file_format: "1"
 id: gentle34
 name: gentle34
 type: shield
-url: https://github.com/talbotsolenberger/zmk-keyboards-gentle34/
+url: https://github.com/talbotsolenberger/zmk-config-gentle34/
 requires: [pro_micro]
 features:
   - keys
