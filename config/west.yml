@@ -2,7 +2,7 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: gentle34-shield-module
+    - name: zmk-config-gentle34
       url-base: https://github.com/talbotsolenberger
   projects:
     - name: zmk
@@ -10,7 +10,7 @@ manifest:
       revision: main
       import: app/west.yml
     - name: zmk-keyboards-gentle34
-      remote: gentle34-shield-module
-      revision: main
+      remote: zmk-config-gentle34
+      revision: master
   self:
     path: config
