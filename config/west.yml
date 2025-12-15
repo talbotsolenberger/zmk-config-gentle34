@@ -11,6 +11,6 @@ manifest:
       import: app/west.yml
     - name: zmk-keyboards-gentle34
       remote: gentle34-shield-module
-      revision: master
+      revision: main
   self:
     path: config
