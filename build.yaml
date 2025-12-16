@@ -5,5 +5,11 @@
 # `artifact-name` to assign a name to distinguish build outputs from each other: 
 #
 #
-board: [ "nice_nano@2.0.0" ]
-shield: [ "gentle34_left", "gentle34_right" ]
+include:
+  - board: nice_nano@2.0.0
+    shield: gentle34_left
+  - board: nice_nano@2.0.0
+    shield: gentle34_right
+  - board: nice_nano@2.0.0
+    shield: settings_reset
+
