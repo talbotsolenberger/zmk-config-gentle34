@@ -50,64 +50,64 @@
                 };
         };
 
-        combos {
+        combos { // NOTE: key-positions are 0 indexed
                 compatible = "zmk,combos";
                 combo_caps {
                         timeout-ms = <30>;
-                        key-positions = <16 17 18>; // keys nea
+                        key-positions = <16 17 18>; // keys "nea"
                         bindings = <&caps_word>;
                         layers = <AL>;
                 };
                 combo_gaming {
                         timeout-ms = <30>;
-                        key-positions = <27 28 29>; // keys /.x
+                        key-positions = <27 28 29>; // keys "/.x"
                         bindings = <&to 4>;
                         layers = <AL>;
                 };
-                combo_OSsym_left {
-			timeout-ms = <30>;
-			key-positions = <11 12>; // keys rt
-			bindings = <&OSsym>;
-		        layers = <AL>;
-		        };
-                combo_OSsym_right {
-			timeout-ms = <30>;
-			key-positions = <17 18>; // keys ne
-			bindings = <&OSsym>;
-		        layers = <AL>;
-		        };
+								combo_OSsym_left {
+												timeout-ms = <30>;
+												key-positions = <11 12>; // keys "sr"
+												bindings = <&OSsym>;
+												layers = <AL>;
+								};
+								combo_OSsym_right {
+												timeout-ms = <30>;
+												key-positions = <17 18>; // keys "ea"
+												bindings = <&OSsym>;
+												layers = <AL>;
+								};
                 combo_AL {
                         timeout-ms = <30>;
-                        key-positions = <26 27 28>; // keys h/.
+                        key-positions = <26 27 28>; // keys "h/."
                         bindings = <&to AL>; 
                 };
                 combo_BT_profile_clear {
                         timeout-ms = <30>;
-                        key-positions = <9 29>; // keys 'x
+                        key-positions = <9 29>; // keys "'x"
                         bindings = <&bt BT_CLR>;
                         layers = <NAV>;
                 };
                 combo_enter_left {
                         timeout-ms = <30>;
-                        key-positions = <12 13>; // keys sr
+                        key-positions = <12 13>; // keys "rt"
                         bindings = <&kp ENTER>;
                         layers = <AL>;
                 };
                 combo_enter_right {
                         timeout-ms = <30>;
-                        key-positions = <16 17>; // keys ea
+                        key-positions = <16 17>; // keys "ne"
                         bindings = <&kp ENTER>;
                         layers = <AL>;
                 };
 								combo_tab_left {
 												timeout-ms = <30>;
-												key-positions = <11 12>; // keys is
+												key-positions = <10 11>; // keys "is"
 												bindings = <&kp TAB>;
 												layers = <AL>;
 								};
 								combo_tab_right {
 												timeout-ms = <30>;
-												key-positions = <19 20>; //keys ao
+												key-positions = <18 19>; //keys "ao"
 												bindings = <&kp TAB>;
 												layers = <AL>;
 								};
