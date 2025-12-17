@@ -101,13 +101,13 @@
                 };
 								combo_tab_left {
 												timeout-ms = <30>;
-												key-positions = <10 11>; // keys "is"
+												key-positions = <1 2>; // keys "cl"
 												bindings = <&kp TAB>;
 												layers = <AL>;
 								};
 								combo_tab_right {
 												timeout-ms = <30>;
-												key-positions = <18 19>; //keys "ao"
+												key-positions = <7 8>; //keys "u,"
 												bindings = <&kp TAB>;
 												layers = <AL>;
 								};
