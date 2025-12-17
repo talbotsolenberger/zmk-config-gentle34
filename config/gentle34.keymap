@@ -52,6 +52,11 @@
 
         combos { // NOTE: key-positions are 0 indexed
                 compatible = "zmk,combos";
+                combo_AL {
+                        timeout-ms = <30>;
+                        key-positions = <26 27 28>; // keys "h/."
+                        bindings = <&to AL>; 
+                };
                 combo_caps {
                         timeout-ms = <30>;
                         key-positions = <16 17 18>; // keys "nea"
@@ -76,15 +81,10 @@
 												bindings = <&OSsym>;
 												layers = <AL>;
 								};
-                combo_AL {
-                        timeout-ms = <30>;
-                        key-positions = <26 27 28>; // keys "h/."
-                        bindings = <&to AL>; 
-                };
                 combo_BT_profile_clear {
                         timeout-ms = <30>;
                         key-positions = <9 29>; // keys "'x"
-                        bindings = <&bt BT_CLR>;
+                        bindings = <&bt BT_CLR_ALL>;
                         layers = <NAV>;
                 };
                 combo_enter_left {
