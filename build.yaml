@@ -6,10 +6,10 @@
 #
 #
 include:
-  - board: nice_nano@2.0.0
+  - board: nice_nano_v2
     shield: gentle34_left
-  - board: nice_nano@2.0.0
+  - board: nice_nano_v2
     shield: gentle34_right
-  - board: nice_nano@2.0.0
+  - board: nice_nano_v2
     shield: settings_reset
 
