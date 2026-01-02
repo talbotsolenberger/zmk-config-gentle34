@@ -7,7 +7,8 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3
+      revision: v0.3 # version with working bluetooth
+      # revision: main # version for most up to date features
       import: app/west.yml
     # - name: zmk-config-gentle34
     #   remote: talbotsolenberger

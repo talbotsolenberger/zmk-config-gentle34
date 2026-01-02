@@ -6,10 +6,13 @@
 #
 #
 include:
-  - board: nice_nano_v2
+  - board: nice_nano_v2 # version with working bluetooth
+  # - board: nice_nano@2.0.0 # version for most up to date features
     shield: gentle34_left
-  - board: nice_nano_v2
+  - board: nice_nano_v2 # version with working bluetooth
+  # - board: nice_nano@2.0.0 # version for most up to date features
     shield: gentle34_right
-  - board: nice_nano_v2
+  - board: nice_nano_v2 # version with working bluetooth
+  # - board: nice_nano@2.0.0 # version for most up to date features
     shield: settings_reset
 
