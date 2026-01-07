@@ -24,8 +24,8 @@
 #define NAV 2
 #define NUM 3
 #define GAME 4
-#define UNR 5
-#define GAME2 6
+#define GAME2 5
+#define UNR 6
 
 / {
 
@@ -54,66 +54,60 @@
                 compatible = "zmk,combos";
                 combo_AL {
                         timeout-ms = <30>;
-                        key-positions = <26 27 28>; // keys "h/."
+                        key-positions = <26 27 28>; // keys < h/. >
                         bindings = <&to AL>; 
-                };
-                combo_caps {
-                        timeout-ms = <30>;
-                        key-positions = <16 17 18>; // keys "nea"
-                        bindings = <&caps_word>;
-                        layers = <AL>;
                 };
                 combo_gaming {
                         timeout-ms = <30>;
-                        key-positions = <27 28 29>; // keys "/.x"
+                        key-positions = <27 28 29>; // keys < /.x >
                         bindings = <&to 4>;
                         layers = <AL>;
                 };
 								combo_OSsym_left {
 												timeout-ms = <30>;
-												key-positions = <11 12>; // keys "sr"
+												key-positions = <11 12>; // keys < sr >
 												bindings = <&OSsym>;
 												layers = <AL>;
 								};
 								combo_OSsym_right {
 												timeout-ms = <30>;
-												key-positions = <17 18>; // keys "ea"
+												key-positions = <17 18>; // keys < ea >
 												bindings = <&OSsym>;
 												layers = <AL>;
 								};
                 combo_BT_profile_clear {
                         timeout-ms = <30>;
-                        key-positions = <9 29>; // keys "'x"
+                        key-positions = <9 29>; // keys < 'x >
                         bindings = <&bt BT_CLR_ALL>;
                         layers = <NAV>;
                 };
                 combo_enter_left {
                         timeout-ms = <30>;
-                        key-positions = <12 13>; // keys "rt"
+                        key-positions = <12 13>; // keys < rt >
                         bindings = <&kp ENTER>;
                         layers = <AL>;
                 };
                 combo_enter_right {
                         timeout-ms = <30>;
-                        key-positions = <16 17>; // keys "ne"
+                        key-positions = <16 17>; // keys < ne >
                         bindings = <&kp ENTER>;
                         layers = <AL>;
                 };
 								combo_tab_left {
 												timeout-ms = <30>;
-												key-positions = <1 2>; // keys "cl"
+												key-positions = <1 2>; // keys < cl >
 												bindings = <&kp TAB>;
 												layers = <AL>;
 								};
 								combo_tab_right {
 												timeout-ms = <30>;
-												key-positions = <7 8>; //keys "u,"
+												key-positions = <7 8>; //keys < u, >
 												bindings = <&kp TAB>;
 												layers = <AL>;
 								};
 								combo_del {
 												timeout-ms = <30>;
-												key-positions = <8 9>; //keys ,'
+												key-positions = <8 9>; //keys < ,' >
 												bindings = <&kp DEL>;
 												layers = <AL>;
 								};
@@ -127,7 +121,7 @@
                 alphas_layer0 {
                 bindings = <
         &kp Y           &kp C           &kp L           &kp M           &kp K                   &kp Z           &kp F           &kp U           &kp COMMA       &kp APOS      
-        &mt LGUI I      &hrl SYM S      &hrl NAV R      &hrl NUM T      &kp G                   &kp P           &hrl NUM N      &hrl NAV E      &hrl SYM A      &mt LGUI O        
+        &mt LGUI I      &hrl SYM S      &hrl NAV R      &hrl NUM T      &kp G                   &kp P           &hrl NUM N      &hrl NAV E      &hrl SYM A      &mt LGUI O     
         &hrl UNR Q      &kp V           &mt LALT W      &kp D           &kp J                   &kp B           &kp H           &mt LALT FSLH   &kp DOT         &kp X        
                                                 &mt LC(LS(LALT)) SPACE  &mt LCTRL ESC           &kp BSPC        &sk RSHFT       
                         >;
@@ -135,55 +129,55 @@
                 
                 symbols_layer1 {
                 bindings = <
-        &kp PIPE        &kp MINUS       &kp LBRC        &kp RBRC        &kp PRCNT               &trans          &kp AMPS        &kp BSLH        &kp GRAVE       &trans          
-        &kp EQUAL       &kp UNDER       &kp LPAR        &kp RPAR        &kp HASH                &kp COLON       &kp SEMI        &kp STAR        &kp EXCL        &kp DQT         
-        &kp TILDE       &kp PLUS        &kp LBKT        &kp RBKT        &kp DLLR                &trans          &kp CARET       &kp AT          &trans          &trans          
+        &kp PIPE        &kp MINUS       &kp LBRC        &kp RBRC        &kp PRCNT               &trans          &kp AMPS        &kp BSLH        &kp GRAVE       &trans         
+        &kp EQUAL       &kp UNDER       &kp LPAR        &kp RPAR        &kp HASH                &kp COLON       &kp SEMI        &kp STAR        &kp EXCL        &kp DQT        
+        &kp TILDE       &kp PLUS        &kp LBKT        &kp RBKT        &kp DLLR                &trans          &kp CARET       &kp AT          &trans          &trans         
                                                         &kp SPACE       &trans                  &kp BSPC        &kp ENTER
                         >;
                 };
 
                 navigation_layer2 {
                 bindings = <
-        &kp ESC         &trans          &kp UP          &trans          &trans                  &kp C_VOL_UP    &kp HOME        &kp UP          &kp END         &kp DEL         
-        &kp TAB         &kp LEFT        &kp DOWN        &kp RIGHT       &kp ENTER               &kp C_VOL_DN    &kp LEFT        &kp DOWN        &kp RIGHT       &kp LGUI     
-        &kp INS         &kp CAPS        &trans          &trans          &trans                  &kp PSCRN       &kp PG_UP       &kp PG_DN       &kp F18         &kp C_PLAY_PAUSE
+        &kp ESC         &trans          &kp UP          &trans          &trans                  &kp C_VOL_UP    &kp HOME        &kp UP          &kp END         &kp DEL        
+        &kp TAB         &kp LEFT        &kp DOWN        &kp RIGHT       &kp ENTER               &kp C_VOL_DN    &kp LEFT        &kp DOWN        &kp RIGHT       &kp LGUI    
+        &kp INS         &kp CAPS        &trans          &trans          &trans                  &kp PSCRN       &kp PG_UP       &kp PG_DN       &kp F18         &kp C_PLAY_PAUS
                                                         &kp ENTER       &kp LCTRL               &kp RALT        &kp RSHFT       
                         >;
                 };
                 
                 numbers_layer3 {
                 bindings = <
-        &trans          &kp F7          &kp F8          &kp F9          &kp F12                 &kp KP_SLASH    &kp N7          &kp N8          &kp N9          &kp MINUS       
-        &kp TAB         &kp F4          &kp F5          &kp F6          &kp F11                 &kp KP_ASTERISK &kp N4          &kp N5          &kp N6          &kp N0          
-        &kp LALT        &kp F1          &kp F2          &kp F3          &kp F10                 &kp KP_PLUS     &kp N1          &kp N2          &kp N3          &kp KP_DOT      
+        &trans          &kp F7          &kp F8          &kp F9          &kp F12                 &kp KP_SLASH    &kp N7          &kp N8          &kp N9          &kp MINUS      
+        &kp TAB         &kp F4          &kp F5          &kp F6          &kp F11                 &kp KP_ASTERISK &kp N4          &kp N5          &kp N6          &kp N0         
+        &kp LALT        &kp F1          &kp F2          &kp F3          &kp F10                 &kp KP_PLUS     &kp N1          &kp N2          &kp N3          &kp KP_DOT     
                                                         &kp SPACE       &kp LCTRL               &kp BSPC        &kp ENTER
                         >;
                 };
                 
                 gaming_layer4 {
                 bindings = <
-        &mo GAME2       &kp Q           &kp W           &kp E           &kp R                   &kp C_VOL_UP    &kp X           &kp UP          &trans          &kp F19         
-        &kp LSHFT       &kp A           &kp S           &kp D           &kp F                   &kp C_VOL_DN    &kp LEFT        &kp DOWN        &kp RIGHT       &kp F18         
-        &kp LCTRL       &kp Z           &kp X           &kp C           &kp V                   &kp M           &kp C           &kp V           &kp Z           &kp C_PP        
+        &mo GAME2       &kp Q           &kp W           &kp E           &kp R                   &kp C_VOL_UP    &kp X           &kp UP          &trans          &kp F19        
+        &kp LSHFT       &kp A           &kp S           &kp D           &kp F                   &kp C_VOL_DN    &kp LEFT        &kp DOWN        &kp RIGHT       &kp F18        
+        &kp LCTRL       &kp Z           &kp X           &kp C           &kp V                   &kp M           &kp C           &kp V           &kp Z           &kp C_PP       
                                                         &kp SPACE       &kp LALT                &kp ESC         &kp ENTER       
                         >;
                 };
 
-                unreal_layer5 {
+                gaming_second_layer5 {
                 bindings = <
-        &kp TAB         &kp Q           &kp W           &kp E           &kp R                   &kp C_VOL_UP    &trans          &kp UP          &trans          &kp F19         
-        &kp LSHFT       &kp A           &kp S           &kp D           &kp F                   &kp C_VOL_DN    &kp LEFT        &kp DOWN        &kp RIGHT       &kp F18         
-        &kp LCTRL       &kp Z           &kp X           &kp C           &kp V                   &kp M           &kp C           &kp V           &trans          &kp C_PP        
-                                                        &kp SPACE       &kp LALT                &kp ESC         &kp ENTER       
-                        >;
-                };
-
-                gaming_second_layer6 {
-                bindings = <
-        &trans          &kp ESC         &trans          &trans          &kp N1                  &kp C_VOL_UP    &kp X           &kp UP          &trans          &kp F19         
-        &trans          &trans          &trans          &trans          &kp N2                  &kp C_VOL_DN    &kp LEFT        &kp DOWN        &kp RIGHT       &kp F18         
-        &kp TAB         &trans          &trans          &trans          &kp N3                  &kp M           &kp C           &kp V           &kp Z           &kp C_PP        
+        &trans          &kp ESC         &trans          &trans          &kp N1                  &kp C_VOL_UP    &kp X           &kp UP          &trans          &kp F19        
+        &trans          &trans          &trans          &trans          &kp N2                  &kp C_VOL_DN    &kp LEFT        &kp DOWN        &kp RIGHT       &kp F18        
+        &kp TAB         &trans          &trans          &trans          &kp N3                  &kp M           &kp C           &kp V           &kp Z           &kp C_PP       
                                                         &kp N4          &kp N5                  &kp ESC         &kp ENTER       
+                        >;
+                };
+
+                unreal_layer6 {
+                bindings = <
+        &kp TAB         &kp Q           &kp W           &kp E           &kp R                   &kp C_VOL_UP    &trans          &kp UP          &trans          &kp F19        
+        &kp LSHFT       &kp A           &kp S           &kp D           &kp F                   &kp C_VOL_DN    &kp LEFT        &kp DOWN        &kp RIGHT       &kp F18        
+        &kp LCTRL       &kp Z           &kp X           &kp C           &kp V                   &kp M           &kp C           &kp V           &trans          &kp C_PP       
+                                                        &kp SPACE       &kp LALT                &kp ESC         &kp ENTER       
                         >;
                 };
 
