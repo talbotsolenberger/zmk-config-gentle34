@@ -66,7 +66,7 @@
                 };
 								combo_aseprite {
 												timeout-ms = <30>;
-												key-positions = <20 21 22>; // keys < qvw >
+												key-positions = <6 7 8>; // keys < fu, >
 												bindings = <&to ASE>;
 												layers = <AL>;
 								};
