@@ -154,6 +154,12 @@
 												bindings = <&kp LC(RALT)>;
 												layers = <ASE>;
 								};
+								combo_ase_enter{
+												timeout-ms = <30>;
+												key-positions = <15 16>; //keys < pn >
+												bindings = <&kp ENTER>;
+												layers = <ASE>;
+								};
         };
 };
 
