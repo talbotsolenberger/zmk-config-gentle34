@@ -98,7 +98,7 @@
                         timeout-ms = <30>;
                         key-positions = <16 17>; // keys < ne >
                         bindings = <&kp ENTER>;
-                        layers = <AL ASE>;
+                        layers = <AL>;
                 };
 								combo_tab_left {
 												timeout-ms = <30>;
@@ -146,6 +146,12 @@
 												timeout-ms = <30>;
 												key-positions = <8 9>; //keys < ,' >
 												bindings = <&kp ESC>;
+												layers = <ASE>;
+								};
+								combo_ase_ctrl_alt{
+												timeout-ms = <30>;
+												key-positions = <16 17>; //keys < ne >
+												bindings = <&kp LC(RALT)>;
 												layers = <ASE>;
 								};
         };
