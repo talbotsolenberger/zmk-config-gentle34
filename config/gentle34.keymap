@@ -138,7 +138,7 @@
 								};
 								combo_ase_esc{
 												timeout-ms = <30>;
-												key-positions = <18 19>; //keys < ao >
+												key-positions = <17 18>; //keys < ea >
 												bindings = <&kp ESC>;
 												layers = <ASE>;
 								};
