@@ -53,6 +53,8 @@
 
         combos { // NOTE: key-positions are 0 indexed
                 compatible = "zmk,combos";
+
+								// ALPHA LAYER COMBOS
                 combo_AL {
                         timeout-ms = <30>;
                         key-positions = <26 27 28>; // keys < h/. >
@@ -82,12 +84,6 @@
 												bindings = <&OSsym>;
 												layers = <AL>;
 								};
-                combo_BT_profile_clear {
-                        timeout-ms = <30>;
-                        key-positions = <9 29>; // keys < 'x >
-                        bindings = <&bt BT_CLR_ALL>;
-                        layers = <NAV>;
-                };
                 combo_enter_left {
                         timeout-ms = <30>;
                         key-positions = <12 13>; // keys < rt >
@@ -118,12 +114,8 @@
 												bindings = <&kp DEL>;
 												layers = <AL ASE>;
 								};
-								combo_gaming_esc{
-												timeout-ms = <40>;
-												key-positions = <30 31>; //keys < space ctrl >
-												bindings = <&kp TAB>;
-												layers = <GAME>;
-								};
+
+								// ASEPRITE COMBOS
 								combo_ase_shift{
 												timeout-ms = <30>;
 												key-positions = <26 27>; //keys < h/ >
@@ -154,6 +146,22 @@
 												bindings = <&kp ENTER>;
 												layers = <ASE>;
 								};
+
+								// GAMING COMBOS
+								combo_gaming_esc{
+												timeout-ms = <40>;
+												key-positions = <30 31>; //keys < space ctrl >
+												bindings = <&kp TAB>;
+												layers = <GAME>;
+								};
+
+								// SPECIALTY COMBOS
+                combo_BT_profile_clear {
+                        timeout-ms = <30>;
+                        key-positions = <9 29>; // keys < 'x >
+                        bindings = <&bt BT_CLR_ALL>;
+                        layers = <NAV>;
+                };
         };
 };
 
