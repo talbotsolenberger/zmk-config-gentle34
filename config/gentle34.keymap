@@ -55,23 +55,11 @@
                 compatible = "zmk,combos";
 
 								// ALPHA LAYER COMBOS
-                combo_AL {
+                combo_layer_to_AL {
                         timeout-ms = <30>;
                         key-positions = <26 27 28>; // keys < h/. >
                         bindings = <&to AL>; 
                 };
-                combo_gaming {
-                        timeout-ms = <30>;
-                        key-positions = <27 28 29>; // keys < /.x >
-                        bindings = <&to GAME>;
-                        layers = <AL>;
-                };
-								combo_aseprite {
-												timeout-ms = <30>;
-												key-positions = <6 7 8>; // keys < fu, >
-												bindings = <&to ASE>;
-												layers = <AL>;
-								};
 								combo_OSsym_left {
 												timeout-ms = <30>;
 												key-positions = <11 12>; // keys < sr >
@@ -116,6 +104,12 @@
 								};
 
 								// ASEPRITE COMBOS
+								combo_layer_to_aseprite {
+												timeout-ms = <30>;
+												key-positions = <6 7 8>; // keys < fu, >
+												bindings = <&to ASE>;
+												layers = <AL>;
+								};
 								combo_ase_shift{
 												timeout-ms = <30>;
 												key-positions = <26 27>; //keys < h/ >
@@ -148,6 +142,12 @@
 								};
 
 								// GAMING COMBOS
+                combo_layer_to_gaming {
+                        timeout-ms = <30>;
+                        key-positions = <27 28 29>; // keys < /.x >
+                        bindings = <&to GAME>;
+                        layers = <AL>;
+                };
 								combo_gaming_esc{
 												timeout-ms = <40>;
 												key-positions = <30 31>; //keys < space ctrl >
