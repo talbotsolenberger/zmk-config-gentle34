@@ -26,7 +26,7 @@
 #define GAME 4
 #define GAME2 5
 #define UNR 6
-#define ASE 7
+#define CRE 7
 
 / {
 
@@ -100,45 +100,45 @@
 												timeout-ms = <30>;
 												key-positions = <8 9>; //keys < ,' >
 												bindings = <&kp DEL>;
-												layers = <AL ASE>;
+												layers = <AL CRE>;
 								};
 
-								// ASEPRITE COMBOS
-								combo_layer_to_aseprite {
+								// CREATIVE COMBOS
+								combo_layer_to_creative {
 												timeout-ms = <30>;
 												key-positions = <6 7 8>; // keys < fu, >
-												bindings = <&to ASE>;
+												bindings = <&to CRE>;
 												layers = <AL>;
 								};
-								combo_ase_shift{
+								combo_cre_shift{
 												timeout-ms = <30>;
 												key-positions = <26 27>; //keys < h/ >
 												bindings = <&sk RSHFT>;
-												layers = <ASE>;
+												layers = <CRE>;
 								};
-								combo_ase_space{
+								combo_cre_space{
 												timeout-ms = <30>;
 												key-positions = <6 7>; //keys < fu >
 												bindings = <&kp SPACE>;
-												layers = <ASE>;
+												layers = <CRE>;
 								};
-								combo_ase_esc{
+								combo_cre_esc{
 												timeout-ms = <30>;
 												key-positions = <17 18>; //keys < ea >
 												bindings = <&kp ESC>;
-												layers = <ASE>;
+												layers = <CRE>;
 								};
-								combo_ase_ctrl_alt{
+								combo_cre_ctrl_alt{
 												timeout-ms = <30>;
 												key-positions = <16 17>; //keys < ne >
 												bindings = <&kp LC(RALT)>;
-												layers = <ASE>;
+												layers = <CRE>;
 								};
-								combo_ase_enter{
+								combo_cre_enter{
 												timeout-ms = <30>;
 												key-positions = <15 16>; //keys < pn >
 												bindings = <&kp ENTER>;
-												layers = <ASE>;
+												layers = <CRE>;
 								};
 
 								// GAMING COMBOS
@@ -216,8 +216,8 @@
 
                 gaming_second_layer5 {
                 bindings = <
-        &trans          &kp ESC         &trans          &kp TAB         &kp N1                  &kp C_VOL_UP    &kp X           &kp UP          &trans          &kp F19        
-        &trans          &trans          &trans          &trans          &kp N2                  &kp C_VOL_DN    &kp LEFT        &kp DOWN        &kp RIGHT       &kp F18        
+        &trans          &kp ESC         &kp X           &kp TAB         &kp N1                  &kp C_VOL_UP    &kp X           &kp UP          &trans          &kp F19        
+        &trans          &trans          &kp Z           &kp LALT        &kp N2                  &kp C_VOL_DN    &kp LEFT        &kp DOWN        &kp RIGHT       &kp F18        
         &trans          &trans          &trans          &kp B           &kp N3                  &kp M           &kp C           &kp V           &kp Z           &kp C_PP       
                                                         &kp N4          &kp N5                  &kp ESC         &kp ENTER       
                         >;
@@ -232,9 +232,9 @@
                         >;
                 };
 								
-                aseprite7 {
+                creative7 {
                 bindings = <
-        &kp Y           &kp C           &kp L           &kp M           &kp K                   &kp Z           &kp F           &kp U           &kp COMMA       &kp APOS      
+        &hrl GAME2 Y    &kp C           &kp L           &kp M           &kp K                   &kp Z           &kp F           &kp U           &kp COMMA       &kp APOS      
         &kp I      			&kp S      			&kp R      			&kp T      			&kp G                   &kp P           &kp N      			&kp E      			&kp A      			&kp O     
         &kp Q      			&kp V           &kp W      			&kp D           &kp J                   &kp B           &kp H           &kp FSLH   			&kp DOT         &kp X        
                                                 				&kp SPACE  			&kp ESC           			&kp LCTRL       &kp LALT       
